@@ -1,0 +1,41 @@
+:host {
+  display: block;
+}
+
+.card {
+  padding: 20px;
+  border: 3px solid var(--border-color);
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .icons {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .headers {
+      font-size: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 8px;
+    }
+  }
+
+  .sub-headers {
+    font-size: 1rem;
+    color: var(--font-color-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 8px;
+  }
+
+  .card-body {
+    margin-top: 16px;
+  }
+}
