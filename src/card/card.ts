@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, computed, contentChildren, Directive } from '@angular/core';
+
+@Directive({
+  selector: '[card-icon]',
+})
+export class CardIcon {}
 
 @Component({
   selector: 'app-card',
@@ -7,5 +12,6 @@ import { Component } from '@angular/core';
   styleUrl: './card.scss',
 })
 export class Card {
-
+  private readonly icons = contentChildren(CardIcon, { descendants: true });
+  protected readonly hasIcons = computed(() => this.icons().length > 0);
 }

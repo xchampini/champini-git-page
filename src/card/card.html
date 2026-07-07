@@ -1,8 +1,10 @@
 <div class="card">
   <div class="header">
-    <div class="icons">
-      <ng-content select="[card-icon]"></ng-content>
-    </div>
+    @if (hasIcons()) {
+      <div class="icons">
+        <ng-content select="[card-icon]"></ng-content>
+      </div>
+    }
 
     <div class="headers">
       <ng-content select="[card-header]"></ng-content>

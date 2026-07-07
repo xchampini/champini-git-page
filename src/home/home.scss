@@ -1,6 +1,8 @@
 .content {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  gap: 60px 20px;
   align-items: center;
   height: 100%;
   margin: 20px;
@@ -35,5 +37,15 @@ app-card {
     &::after {
       content: ' ]';
     }
+  }
+}
+
+.tools-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  img {
+    border-radius: 5px;
   }
 }
