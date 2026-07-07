@@ -28,6 +28,7 @@ jobs:
 
       - run: npm ci
       - run: npm run build -- --base-href /
+      - run: cp ./dist/champini-git-site/browser/index.html ./dist/champini-git-site/browser/404.html
 
       - uses: actions/upload-pages-artifact@v3
         with:
